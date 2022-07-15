@@ -2,23 +2,29 @@ package com.examplereto2;
 
 public class Computadores {
     //Atributos:
-    protected final static char ConsumoW = 'F';
-    protected final static Double  PRECIO_BASE
-        
-    }
+    protected final static char CONSUMO_W = 'F';
+    protected final static Double  PRECIO_BASE = 100.0;
+    protected final static Integer PESO_BASE = 5;
+
+    protected Double precioBase;
+    protected Integer peso;
+    protected char consumoW;
 
     //Construtor
 
     public Computadores() {
         this.precioBase = PRECIO_BASE;
         this.peso = PESO_BASE;
-        this.ConsumoW = CONSUMO_W;
+        this.consumoW = Computadores.CONSUMO_W;
         //this(PRECIO_BASE, PESO_BASE, CONSUMO_W; // Llamma al constructor de la misma clase
     }
     public Computadores(Double precioBase, Integer peso) {
-
+        //this.precioBase = precioBase;
+        //this.peso = peso;
+        //this.consumoW = CONSUMO_W
+        this(precioBase, peso, CONSUMO_W);
     }
-    public Computadores(Double precioBase, Integer peso, char ConsumoW) {
+    public Computadores(Double precioBase, Integer peso, char consumoW) {
         this.precioBase = precioBase;
         this.peso = peso;
         this.consumoW = consumoW;
@@ -27,8 +33,8 @@ public class Computadores {
     //Metodos
     public Double calcularPrecio(){
         Double adicion = 0.0;
-        switch(ConsumoW){
-            class= 'A':
+        switch(consumoW){
+            case 'A':
                 adicion +=100.0;
                 break;
             case 'B':

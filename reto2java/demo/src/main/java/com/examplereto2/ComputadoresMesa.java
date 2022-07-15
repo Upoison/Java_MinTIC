@@ -11,6 +11,7 @@ public class ComputadoresMesa extends Computadores {
     public ComputadoresMesa(Double precioBase, Integer peso) {
         this(precioBase, peso, CONSUMO_W, ALMACENAMIENTO_BASE);
     }
+
     public ComputadoresMesa(Double precioBase, Integer peso, char consumoW, Integer almacenamiento){
         super(precioBase,peso,consumoW);
         this.almacenamiento = almacenamiento;
@@ -22,6 +23,6 @@ public class ComputadoresMesa extends Computadores {
         if (almacenamiento > 100){
             precioCM +=50.0;
         }
-        return precioCM
+        return precioCM;
     }
 }

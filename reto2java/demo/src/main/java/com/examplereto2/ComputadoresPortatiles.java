@@ -6,14 +6,14 @@ public class ComputadoresPortatiles extends Computadores {
     private boolean camaraITG;
     //Construtor
     public ComputadoresPortatiles() {
-        this(PRECIO_BASE, PESO_BASE, CONSUMO_W, PULGADAS_BASE,  camaraITG:false);
+        this(PRECIO_BASE, PESO_BASE, CONSUMO_W, PULGADAS_BASE, false);
     }
     //Construtor
     public ComputadoresPortatiles(Double precioBase, Integer peso){
-        this(precioBase, peso, CONSUMO_W, PULGADAS_BASE,  camaraITG:false);
+        this(precioBase, peso, CONSUMO_W, PULGADAS_BASE,  false);
     }
     //Construtor
-    public ComputadoresPortatiles(Double precioBase, Integer peso, char ConsumoW, Integer pulgadas, boolean camaraITG){
+    public ComputadoresPortatiles(Double precioBase, Integer peso, char consumoW, Integer pulgadas, boolean camaraITG){
         super(precioBase, peso, consumoW);
         this.pulgadas = pulgadas;
         this.camaraITG = camaraITG;
